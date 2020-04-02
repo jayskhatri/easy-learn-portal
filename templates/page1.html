@@ -1,0 +1,137 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>PEARL JAM</title>
+<!--
+Stacked Template
+https://templatemo.com/tm-505-stacked
+-->
+		<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet"> 
+		<meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="../static/stacked_static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/stacked_static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../static/stacked_static/css/templatemo-style.css">
+
+        <script src="../static/stacked_static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="nav">
+          <div class="burger">
+            <div class="burger__patty"></div>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="{{url_for('index')}}" class="nav__link c-blue"><img src="../static/stacked_static/img/eye.png" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="{{ url_for('english_to_hindi') }}" class="nav__link c-red"><img src="../static/stacked_static/img/language.png" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="{{ url_for('text_to_speech') }}" class="nav__link c-green"><img src="../static/stacked_static/img/speak.png" alt=""></a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="panel b-blue" id="1">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="home-content">
+                      <div class="home-heading">
+
+                        <h1 style="font-family: 'Bangers'"><img src="../static/stacked_static/img/pied_piper.png"><br><em>P e a r l &nbsp;-&nbsp; J a m&nbsp;!</em></h1>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="home-box-content">
+                            <div class="left-text">
+                              <h4>{{ topic_name }}</h4>
+                              <p><p> {{topic_summary}} </p>
+    <iframe src = "{{ link_1 }}" width = "400" height="200" allowfullscreen>This is the youtube video</iframe>
+    </p>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel b-green" id="4">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="contact-content">
+                      <div class="heading">
+                        <h4>CHOOSE LANGUAGE FOR CONVERSION!</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="contat-form">
+                            <form id="contact" action="{{ url_for('english_to_hindi') }}" method="post">
+                              
+                             <fieldset>
+                                <select name="language" class="form-control" id="language" placeholder="Select language" required="">
+                                  <option value="en-us">English</option>
+                                  <option value="hi">Hindi</option>
+                                  <option value="bn">Bengali</option>
+                                  <option value="ta">Tamil</option>
+                                </select>
+                              </fieldset>
+
+                              
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="btn">Convert</button>
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+
+
+
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../static/stacked_static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="../static/stacked_static/js/vendor/bootstrap.min.js"></script>
+
+        <script src="../static/stacked_static/js/plugins.js"></script>
+        <script src="../static/stacked_static/js/main.js"></script>
+
+    </body>
+</html>
